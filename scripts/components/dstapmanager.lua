@@ -32,6 +32,7 @@ local function OnTick(inst, self)
         end
         inst:DoTaskInTime(10, function()
             self:AnnounceVictoryStatus()
+            self:AnnounceIncompatibilityStatus()
         end)
     end
 end
@@ -98,6 +99,12 @@ function DSTAPManager:AnnounceVictoryStatus()
     local slotdata = self:GetSlotData()
     if slotdata.victory or slotdata.finishedgame then
         TheNet:Announce(self.slotname.." has already completed their goal.")
+    end
+end
+
+function DSTAPManager:AnnounceIncompatibilityStatus()
+    if KnownModIndex:IsModEnabled("workshop-2657513551") then
+        TheNet:Announce("Warning! Don't Starve Alone is incompatible with Archipelago Randomizer.")
     end
 end
 
