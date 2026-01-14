@@ -600,7 +600,7 @@ function DSTAPManager:ManageEvent(datatype, data)
             infotable[data.item] = nil -- Erase from legacy table
             slotdata.hintinfo_by_player[data.receiving_player] = slotdata.hintinfo_by_player[data.receiving_player] or {}
             infotable = slotdata.hintinfo_by_player[data.receiving_player]
-            local index_by_location = true
+            index_by_location = true
         end
         local hint = {
             item = data.item,
@@ -618,6 +618,10 @@ function DSTAPManager:ManageEvent(datatype, data)
             infotable[hint.item] = hint
             ArchipelagoDST.SendCommandToAllShards("hintinfo", json.encode(infotable[hint.item]))
         elseif hint.location and index_by_location then
+            if hint.location_is_local and not infotable[hint.location] then
+                -- Announce the hint when first receiving it
+                TheNet:Announce("[Hint]: "..hint.receivingname.."'s "..hint.itemname.." is at "..hint.locationname..".")
+            end
             infotable[hint.location] = hint
             ArchipelagoDST.SendCommandToAllShards("hintinfo", json.encode(infotable[hint.location]))
         end
