@@ -444,7 +444,10 @@ function DSTAPManager:SendItems(items, isresync)
                             abstractitems[id] = true                     
                         end
 
-                        TheNet:Announce("Item received: "..item.prettyname)
+                        if self.clientversion < ArchipelagoDST.VERSION.CLIENT_VERSION_WITH_ITEM_SEND_MESSAGES then
+                            -- TODO: Remove in a later update
+                            TheNet:Announce("Item received: "..item.prettyname)
+                        end
 
                         items_given_already = items_given_this_session
                     else
@@ -455,7 +458,8 @@ function DSTAPManager:SendItems(items, isresync)
                 end
                 if isrecipe then
                     slotdata.collecteditems = slotdata.collecteditems or {}
-                    if not slotdata.collecteditems[id] then
+                    if not slotdata.collecteditems[id] and self.clientversion < ArchipelagoDST.VERSION.CLIENT_VERSION_WITH_ITEM_SEND_MESSAGES then
+                        -- TODO: Remove in a later update
                         TheNet:Announce("Recipe received: "..item.prettyname)
                     end
                     slotdata.collecteditems[id] = true
