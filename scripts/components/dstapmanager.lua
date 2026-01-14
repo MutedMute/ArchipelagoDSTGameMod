@@ -65,6 +65,7 @@ local DSTAPManager = Class(function(self, inst)
     self.clientversion = "0"
     self.outputdata = {}
     self.connected_timestamp = os.time()
+    self.client_connected_timestamp = 0
     self.last_send_time = os.time()
     self.sendqueue_bookmark = 0
     self.sendqueue_lowpriority_bookmark = 0
@@ -812,12 +813,9 @@ function DSTAPManager:ReadAPData(data)
     if not data.session_id or data.session_id ~= self.connected_timestamp then
         -- Check if this a fresh world. Acknowledge client's seed and send it back
         if not self.seed or self.seed == "None" then
-            -- if not self._fresh_seed_dirty_sent then
-            --     self._fresh_seed_dirty_sent = true
-                self.outputdata.seed = data.seed_name
-                self.outputdata.slotnum = data.slot
-                self:SetAPDataTaskDirty()
-            -- end
+            self.outputdata.seed = data.seed_name
+            self.outputdata.slotnum = data.slot
+            self:SetAPDataTaskDirty()
         end
         self.ping = "5000"
         self.connected = false
@@ -829,7 +827,14 @@ function DSTAPManager:ReadAPData(data)
         self:Cancel_ProcessDataQueueTask()
         return
     end
-    -- self._fresh_seed_dirty_sent = nil
+
+    if data.connected_timestamp ~= self.client_connected_timestamp then
+        -- Detect if the client has restarted and clear queue
+        self.sendqueue_bookmark = 0
+        self.sendqueue_lowpriority_bookmark = 0
+        self:Cancel_ProcessDataQueueTask()
+        self.client_connected_timestamp = data.connected_timestamp
+    end
 
     -- By now we trust the session. We can accept the seed
     self.ping = 1
