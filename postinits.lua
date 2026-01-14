@@ -318,6 +318,8 @@ local function BuilderPostInit(self, inst)
         if recipe ~= nil and recipe.dstap_recipe then
             if self.freebuildmode then
                 return true
+            elseif recipe.dstap_effect and not recipe.dstap_locked then
+                return true
             elseif recipe.builder_tag ~= nil and not self.inst:HasTag(recipe.builder_tag) then
                 return false
             elseif self.station_recipes[recipe.name] or table.contains(self.recipes, recipe.name) then
@@ -452,6 +454,8 @@ local function BuilderReplicaPostInit(self, inst)
                 return self.inst.components.builder:KnowsRecipe(recipe, ...)
             elseif self.classified ~= nil then
                 if self.classified.isfreebuildmode:value() then
+                    return true
+                elseif recipe.dstap_effect and not recipe.dstap_locked then
                     return true
                 elseif recipe.builder_tag ~= nil and not self.inst:HasTag(recipe.builder_tag) then
                     return false
