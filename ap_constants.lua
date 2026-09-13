@@ -202,8 +202,8 @@ local DSTAP_ITEMS = {
     {191, "Auto-Mat-O-Chanic",           "wagpunkbits_kit",                       { "useful" } },
     {192, "Dreadstone Armor Set",        "armordreadstone",                       { "useful", "bundle", "cave" } },
     {193, "Dreadstone Helm",             "dreadstonehat",                         { "useful", "deprecated", "cave" } },
-    -- {194, "UNUSED",                      "",                                      { "filler" } },
-    -- {195, "UNUSED",                      "",                                      { "filler" } },
+    {194, "W.A.R.B.I.S Armor",           "armorwagpunk",                          { "useful" } },
+    {195, "W.A.R.B.I.S Head Gear",       "wagpunkhat",                            { "useful" } },
     -- {196, "UNUSED",                      "",                                      { "filler" } },
     -- {197, "UNUSED",                      "",                                      { "filler" } },
     {198, "Boat Kit",                    "boat_item",                             { "useful", "ocean" } },
@@ -477,6 +477,13 @@ local DSTAP_LOCATIONS = {
     {274,   "Toadstool",                "toadstool",                { "boss", "raidboss", "cave"} },
     {275,   "Ancient Guardian",         "minotaur",                 { "boss", "ruins", "priority_fuelweaver_boss" } },
     {276,   "Crab King",                "crabking",                 { "boss", "raidboss", "ocean", "priority_celestial_boss", "special_hermit_10" } },
+    {277,   "Crystal Deerclops",        "mutateddeerclops",         { "boss", "seasonal", "winter", "seasons_passed_4"} }
+    {278,   "Armored Bearger",          "mutatedbearger",           { "boss", "seasonal", "autumn", "seasons_passed_4"} }
+    {279,   "Possessed Varg",           "mutatedwarg",              { "boss", "rng", "seasons_passed_4" } }
+    {280,   "Celestial Revenent",       "alterguardian_phase1_lunarrift",           { "boss", "raidboss", "moonstorm" } }
+    {281,   "Enlightened WARBOT",       "wagboss_robot",            { "boss", "raidboss", "moonstorm" } }
+    {282,   "Clestial Scion",           "alterguardian_phase4_lunarrift",           { "boss", "raidboss", "moonstorm" } }
+    
 
     -- Creatures (301-450)
     {301,   "Batilisk",                 "bat",                  { "creature", "cave" } },
