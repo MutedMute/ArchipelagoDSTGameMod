@@ -256,7 +256,8 @@ local DSTAP_ITEMS = {
     {419, "Thulecite Suit",              "armorruins",                                { "nounlock", "useful", "cave", "ocean" },   { "MAGIC", "ARMOUR" } },
     {420, "Thulecite Club",              "ruins_bat",                                 { "nounlock", "useful", "cave", "ocean" },   { "MAGIC", "WEAPONS" } },
     {421, "Houndius Shootius",           "eyeturret_item",                            { "nounlock", "useful", "ruins" },           { "MAGIC", "WEAPONS" } },
-
+    {422, "Brightsmithy",                "lunar_forge_kit",                           { "nounlock", "useful" },                    { "MAGIC", "STRUCTURES" } },
+    {422, "Shadowcraft Plinth",          "shadow_forge_kit",                          { "nounlock", "useful" },                    { "MAGIC", "STRUCTURES" } },
     -- Starting Recipes (451-500)
     {451, "Axe",                         "axe",                                   { "basic", "progression" } },
     {452, "Pickaxe",                     "pickaxe",                               { "basic", "progression" } },
@@ -477,12 +478,12 @@ local DSTAP_LOCATIONS = {
     {274,   "Toadstool",                "toadstool",                { "boss", "raidboss", "cave"} },
     {275,   "Ancient Guardian",         "minotaur",                 { "boss", "ruins", "priority_fuelweaver_boss" } },
     {276,   "Crab King",                "crabking",                 { "boss", "raidboss", "ocean", "priority_celestial_boss", "special_hermit_10" } },
-    {277,   "Crystal Deerclops",        "mutateddeerclops",         { "boss", "seasonal", "winter", "seasons_passed_4"} }
-    {278,   "Armored Bearger",          "mutatedbearger",           { "boss", "seasonal", "autumn", "seasons_passed_4"} }
-    {279,   "Possessed Varg",           "mutatedwarg",              { "boss", "rng", "seasons_passed_4" } }
-    {280,   "Celestial Revenent",       "alterguardian_phase1_lunarrift",           { "boss", "raidboss", "moonstorm" } }
-    {281,   "Enlightened WARBOT",       "wagboss_robot",            { "boss", "raidboss", "moonstorm" } }
-    {282,   "Clestial Scion",           "alterguardian_phase4_lunarrift",           { "boss", "raidboss", "moonstorm" } }
+    {277,   "Crystal Deerclops",        "mutateddeerclops",         { "boss", "seasonal", "winter", "seasons_passed_4"} },
+    {278,   "Armored Bearger",          "mutatedbearger",           { "boss", "seasonal", "autumn", "seasons_passed_4"} },
+    {279,   "Possessed Varg",           "mutatedwarg",              { "boss", "rng", "seasons_passed_4" } },
+    {280,   "Celestial Revenent",       "alterguardian_phase1_lunarrift",           { "boss", "raidboss", "moonstorm" } },
+    {281,   "Enlightened WARBOT",       "wagboss_robot",            { "boss", "raidboss", "moonstorm" } },
+    {282,   "Clestial Scion",           "alterguardian_phase4_lunarrift",           { "boss", "raidboss", "moonstorm" } },
     
 
     -- Creatures (301-450)

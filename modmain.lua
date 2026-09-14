@@ -353,6 +353,7 @@ local TECHLOOKUP = {
 	ancient = {tier_1 = TECH.ANCIENT_TWO, tier_2 = TECH.ANCIENT_FOUR},
 	celestial = {tier_1 = TECH.CELESTIAL_ONE, tier_2 = TECH.CELESTIAL_THREE},
 	hermitcrab = {tier_1 = TECH.HERMITCRABSHOP_ONE, tier_2 = TECH.HERMITCRABSHOP_THREE, tier_3 = TECH.HERMITCRABSHOP_FIVE, tier_4 = TECH.HERMITCRABSHOP_SEVEN },
+	--shadowcraft = {tier_1 = }
 }
 --
 local INGREDIENTS_IMAGE_OVERRIDES = {
