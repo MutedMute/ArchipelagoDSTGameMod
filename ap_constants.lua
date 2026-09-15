@@ -257,7 +257,20 @@ local DSTAP_ITEMS = {
     {420, "Thulecite Club",              "ruins_bat",                                 { "nounlock", "useful", "cave", "ocean" },   { "MAGIC", "WEAPONS" } },
     {421, "Houndius Shootius",           "eyeturret_item",                            { "nounlock", "useful", "ruins" },           { "MAGIC", "WEAPONS" } },
     {422, "Brightsmithy",                "lunar_forge_kit",                           { "nounlock", "useful" },                    { "MAGIC", "STRUCTURES" } },
-    {422, "Shadowcraft Plinth",          "shadow_forge_kit",                          { "nounlock", "useful" },                    { "MAGIC", "STRUCTURES" } },
+    {422, "Shadowcraft Plinth",          "shadow_forge_kit",                          { "nounlock", "useful", "ruins" },           { "MAGIC", "STRUCTURES" } },
+    {423, "Shadow Reaper",               "voidcloth_scythe",                          { "nounlock", "useful" },                    { "MAGIC", "WEAPONS" } },
+    {424, "Void Robes",                  "armor_voidcloth",                           { "nounlock", "useful" },                    { "MAGiC", "ARMOUR" } },
+    {425, "Void Cowl",                   "voidclothhat",                              { "nounlock", "useful" },                    { "MAGIC", "ARMOUR" } },
+    {426, "Umbralla",                    "voidcloth_umbrella",                        { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
+    {427, "Gloomerang",                  "voidcloth_boomerang",                       { "nounlock", "useful" },                    { "MAGIC", "WEAPONS" } },
+    {428, "Void Repair Kit",             "voidcloth_kit",                             { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
+    {429, "Brightshade Sword",           "sword_lunarplant",                          { "nounlock", "useful" },                    { "MAGIC", "WEAPONS" } },
+    {430, "Brightshade Armour",          "armor_lunarplant",                          { "nounlock", "useful" },                    { "MAGIC", "ARMOUR" } },
+    {431, "Brightshade Helm",            "armor_lunarplant",                          { "nounlock", "useful" },                    { "MAGIC", "ARMOUR" } },
+    {432, "Brightshade Staff",           "staff_lunarplant",                          { "nounlock", "useful" },                    { "MAGIC", "WEAPONS" } },
+    {433, "Brightshade Smasher",         "pickaxe_lunarplant",                        { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
+    {434, "Brightshade Shoevel",         "shovel_lunarplant",                         { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
+    {435, "Brightshade Repair Kit",      "lunarplant_kit",                            { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
     -- Starting Recipes (451-500)
     {451, "Axe",                         "axe",                                   { "basic", "progression" } },
     {452, "Pickaxe",                     "pickaxe",                               { "basic", "progression" } },
@@ -483,7 +496,7 @@ local DSTAP_LOCATIONS = {
     {279,   "Possessed Varg",           "mutatedwarg",              { "boss", "rng", "seasons_passed_4" } },
     {280,   "Celestial Revenent",       "alterguardian_phase1_lunarrift",           { "boss", "raidboss", "moonstorm" } },
     {281,   "Enlightened WARBOT",       "wagboss_robot",            { "boss", "raidboss", "moonstorm" } },
-    {282,   "Clestial Scion",           "alterguardian_phase4_lunarrift",           { "boss", "raidboss", "moonstorm" } },
+    {282,   "Celestial Scion",           "alterguardian_phase4_lunarrift",          { "boss", "raidboss", "moonstorm" } },
     
 
     -- Creatures (301-450)
