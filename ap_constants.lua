@@ -494,9 +494,9 @@ local DSTAP_LOCATIONS = {
     {277,   "Crystal Deerclops",        "mutateddeerclops",         { "boss", "seasonal", "winter", "seasons_passed_4"} },
     {278,   "Armored Bearger",          "mutatedbearger",           { "boss", "seasonal", "autumn", "seasons_passed_4"} },
     {279,   "Possessed Varg",           "mutatedwarg",              { "boss", "rng", "seasons_passed_4" } },
-    {280,   "Celestial Revenent",       "alterguardian_phase1_lunarrift",           { "boss", "raidboss", "moonstorm" } },
-    {281,   "Enlightened WARBOT",       "wagboss_robot",            { "boss", "raidboss", "moonstorm" } },
-    {282,   "Celestial Scion",           "alterguardian_phase4_lunarrift",          { "boss", "raidboss", "moonstorm" } },
+    {280,   "Celestial Revenent",       "alterguardian_phase1_lunarrift",          { "boss", "raidboss", "moonstorm" } },
+    {281,   "Enlightened W.A.R.B.O.T",  "wagboss_robot",            { "boss", "raidboss", "moonstorm" } },
+    {282,   "Celestial Scion",          "alterguardian_phase4_lunarrift",          { "boss", "raidboss", "moonstorm" } },
     
 
     -- Creatures (301-450)

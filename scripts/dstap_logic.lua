@@ -774,6 +774,9 @@ local Logic = Class(function(self)
         dark_magic = add_event("Dark Magic", {
             helpful = any("Dark Sword", "Bat Bat", "Night Armor"),
         }),
+       -- planar_combat = add_event("Planar Combat", {
+            
+        --})
 
 
         ----- HEALING -----
@@ -1167,6 +1170,10 @@ local Logic = Class(function(self)
             default = all(Event("advanced_boating"), Event("advanced_boss_combat"), "Sea Fishing Rod"),
             helpful = Event("speed_boost"),
         }),
+        mutateddeerclops = SEASON.WINTER and add_event("Crystal Deerclops", {
+            default = all(Event("advanced_boss_combat"), Event("winter") ),
+            helpful = "Hostile Flare",
+        })
     }
     for _,v in ipairs({"moonrockseed", "grassgekko", "lureplant"}) do
         self.EVENTS[v.."_exists"] = add_exist_event(v)
@@ -1230,6 +1237,10 @@ local Logic = Class(function(self)
         ["Nightmare Werepig"] =                 Event("nightmare_werepig"),
         ["Scrappy Werepig"] =                   Event("scrappy_werepig"),
         ["Frostjaw"] =                          Event("frostjaw"),
+        ["Crystal Deerclops"] =                 Event("mutateddeerclops"),
+        ["Celestial Revenant"] =                Event("alterguardian_phase1_lunarrift"),
+        ["Enlightened W.A.R.B.O.T"] =           Event("wagboss_robot"),
+        ["Celestial Scion"] =                   Event("alterguardian_phase4_lunarrift"),
 
         -- Creatures
         ["Batilisk"] =                          Event("batilisk"),
