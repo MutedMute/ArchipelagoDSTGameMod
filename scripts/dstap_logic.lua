@@ -1181,7 +1181,7 @@ local Logic = Class(function(self)
             default = all(Event("advanced_boss_combat"), Event("moonstorm")),
         }),
         celestial_revenant = REGION.OCEAN and add_event("Celestial Revenant", {
-            default = all(Event("advanced_boating"), Event("advanced_boss_combat"), Event("epic_combat")),
+            default = all(Event("advanced_boating"), Event("advanced_boss_combat")),
         }),
         wagboss_robot = REGION.OCEAN and add_event("Enlightened W.A.R.B.O.T", {
             default = all(Event("advanced_boating"), Event("advanced_boss_combat"), Event("epic_combat")),
