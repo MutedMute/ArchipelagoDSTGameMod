@@ -582,7 +582,7 @@ local Logic = Class(function(self)
 
         ----- TOOLS -----
         any_pickaxe = add_event("Any Pickaxe", {
-            default = any("Pickaxe", "Opulent Pickaxe"),
+            default = any("Pickaxe", "Opulent Pickaxe", "Brightshade Smasher"),
             hard    = "Woodie",
             spread  = false,
         }),
@@ -591,12 +591,12 @@ local Logic = Class(function(self)
             spread  = false,
         }),
         any_shovel = add_event("Any Shovel", { 
-            default = any("Shovel", "Regal Shovel"),
+            default = any("Shovel", "Regal Shovel", "Brightshade Shoevel"),
             hard    = "Woodie",
             spread  = false,
         }),
         any_hoe = add_event("Any Gardening Hoe", { 
-            default = any("Garden Hoe", "Splendid Garden Hoe", "Wormwood"),
+            default = any("Garden Hoe", "Splendid Garden Hoe", "Wormwood", "Brightshade Shoevel"),
             spread  = false,
         }),
         bird_caging = add_event("Bird Caging", { 
@@ -1180,14 +1180,14 @@ local Logic = Class(function(self)
         mutatedwarg = add_event("Possessed varg", {
             default = all(Event("advanced_boss_combat"), Event("moonstorm")),
         }),
-        celestial_revenant = add_event("Celestial Revenant", {
-            default = all(Event("advanced_boss_combat"), Event("epic_combat")),
+        celestial_revenant = REGION.OCEAN and add_event("Celestial Revenant", {
+            default = all(Event("advanced_boating"), Event("advanced_boss_combat"), Event("epic_combat")),
         }),
-        wagboss_robot = add_event("Enlightened W.A.R.B.O.T", {
-            default = all(Event("advanced_boss_combat"), Event("epic_combat")),
+        wagboss_robot = REGION.OCEAN and add_event("Enlightened W.A.R.B.O.T", {
+            default = all(Event("advanced_boating"), Event("advanced_boss_combat"), Event("epic_combat")),
         }),
-        celestial_scion = add_event("Celestial Scion", {
-            default = all(Event("advanced_boss_combat"), Event("epic_combat")),
+        celestial_scion = REGION.OCEAN and add_event("Celestial Scion", {
+            default = all(Event("advanced_boating"), Event("advanced_boss_combat"), Event("epic_combat")),
         })
         
         
