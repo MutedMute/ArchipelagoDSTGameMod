@@ -774,8 +774,8 @@ local Logic = Class(function(self)
         dark_magic = add_event("Dark Magic", {
             helpful = any("Dark Sword", "Bat Bat", "Night Armor"),
         }),
-       -- planar_combat = add_event("Planar Combat", {
-            
+        --planar_combat = add_event("Planar Combat", {
+          --  helpful = any()
         --})
 
 
@@ -1173,7 +1173,23 @@ local Logic = Class(function(self)
         mutateddeerclops = SEASON.WINTER and add_event("Crystal Deerclops", {
             default = all(Event("advanced_boss_combat"), Event("winter"), Event("moonstorm")),
             helpful = "Hostile Flare",
+        }),
+        mutatedbearger = SEASON.AUTUMN and add_event("Armoured Bearger", {
+            default = all(Event("advanced_boss_combat"), Event("autumn"), Event("moonstorm")),
+        }),
+        mutatedwarg = add_event("Possessed varg", {
+            default = all(Event("advanced_boss_combat"), Event("moonstorm")),
+        }),
+        celestial_revenant = add_event("Celestial Revenant", {
+            default = all(Event("advanced_boss_combat"), Event("epic_combat")),
+        }),
+        wagboss_robot = add_event("Enlightened W.A.R.B.O.T", {
+            default = all(Event("advanced_boss_combat"), Event("epic_combat")),
+        }),
+        celestial_scion = add_event("Celestial Scion", {
+            default = all(Event("advanced_boss_combat"), Event("epic_combat")),
         })
+        
         
     }
     for _,v in ipairs({"moonrockseed", "grassgekko", "lureplant"}) do
@@ -1239,9 +1255,11 @@ local Logic = Class(function(self)
         ["Scrappy Werepig"] =                   Event("scrappy_werepig"),
         ["Frostjaw"] =                          Event("frostjaw"),
         ["Crystal Deerclops"] =                 Event("mutateddeerclops"),
-        ["Celestial Revenant"] =                Event("alterguardian_phase1_lunarrift"),
+        ["Armoured Bearger"] =                  Event("mutatedbearger"),
+        ["Possessed Varg"] =                    Event("mutatedwarg"),
+        ["Celestial Revenant"] =                Event("celestial_revenant"),
         ["Enlightened W.A.R.B.O.T"] =           Event("wagboss_robot"),
-        ["Celestial Scion"] =                   Event("alterguardian_phase4_lunarrift"),
+        ["Celestial Scion"] =                   Event("celestial_scion"),
 
         -- Creatures
         ["Batilisk"] =                          Event("batilisk"),
