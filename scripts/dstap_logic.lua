@@ -1171,9 +1171,10 @@ local Logic = Class(function(self)
             helpful = Event("speed_boost"),
         }),
         mutateddeerclops = SEASON.WINTER and add_event("Crystal Deerclops", {
-            default = all(Event("advanced_boss_combat"), Event("winter") ),
+            default = all(Event("advanced_boss_combat"), Event("winter"), Event("moonstorm")),
             helpful = "Hostile Flare",
         })
+        
     }
     for _,v in ipairs({"moonrockseed", "grassgekko", "lureplant"}) do
         self.EVENTS[v.."_exists"] = add_exist_event(v)

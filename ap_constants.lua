@@ -266,7 +266,7 @@ local DSTAP_ITEMS = {
     {428, "Void Repair Kit",             "voidcloth_kit",                             { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
     {429, "Brightshade Sword",           "sword_lunarplant",                          { "nounlock", "useful" },                    { "MAGIC", "WEAPONS" } },
     {430, "Brightshade Armour",          "armor_lunarplant",                          { "nounlock", "useful" },                    { "MAGIC", "ARMOUR" } },
-    {431, "Brightshade Helm",            "armor_lunarplant",                          { "nounlock", "useful" },                    { "MAGIC", "ARMOUR" } },
+    {431, "Brightshade Helm",            "lunarplant_hat",                            { "nounlock", "useful" },                    { "MAGIC", "ARMOUR" } },
     {432, "Brightshade Staff",           "staff_lunarplant",                          { "nounlock", "useful" },                    { "MAGIC", "WEAPONS" } },
     {433, "Brightshade Smasher",         "pickaxe_lunarplant",                        { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
     {434, "Brightshade Shoevel",         "shovel_lunarplant",                         { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
