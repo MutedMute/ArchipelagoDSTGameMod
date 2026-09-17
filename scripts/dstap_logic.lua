@@ -774,9 +774,10 @@ local Logic = Class(function(self)
         dark_magic = add_event("Dark Magic", {
             helpful = any("Dark Sword", "Bat Bat", "Night Armor"),
         }),
-        --planar_combat = add_event("Planar Combat", {
+        --shadow_planar_combat = add_event("Planar Combat", {
+         --   default = HiddenEvent("advanced_boss_combat"),
           --  helpful = any()
-        --})
+      --  })
 
 
         ----- HEALING -----
