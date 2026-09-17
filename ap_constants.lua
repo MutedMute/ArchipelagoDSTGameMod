@@ -272,6 +272,7 @@ local DSTAP_ITEMS = {
     {434, "Brightshade Shoevel",         "shovel_lunarplant",                         { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
     {435, "Brightshade Repair Kit",      "lunarplant_kit",                            { "nounlock", "useful" },                    { "MAGIC", "TOOLS" } },
     {436, "Brightshade Bomb",            "bomb_lunarplant",                           { "nounlock", "useful" },                    { "MAGIC", "WEAPONS" } },
+    {437, "Shadow Maul",                 "shadow_battleaxe",                          { "nounlock", "useful" },                    { "MAGIC", "WEAPONS" } },
     -- Starting Recipes (451-500)
     {451, "Axe",                         "axe",                                   { "basic", "progression" } },
     {452, "Pickaxe",                     "pickaxe",                               { "basic", "progression" } },
